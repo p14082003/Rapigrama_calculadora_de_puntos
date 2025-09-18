@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Turno de jugador <span id="turn">1</span></h1>
+    <div id="wrapper">
+        <div id="calculator">
+            <h3>Calculadora de puntos</h3>
+            <input type="text" id="wordsFormed" placeholder="Insertar palabras formadas" class="input" title="use letras"
+                name="wordsFormed" onfocus="active('wordsFormed')">
+            <input type="text" id="wordsExtra" placeholder="Insertar letras sobrantes" class="input" title="use letras"
+                name="wordsExtra" onfocus="active('wordsExtra')"><br>
+            <input type="button" onclick="addElem(wordsFormed, words, outputWords)" value="Agregar palabra" class="button">
+            <input type="button" onclick="addElem(wordsExtra,letters,outputLetters)" value="Agregar letra" class="button">
+            <input type="button" onclick="calculate()" value="Calcular" class="button">
+            <p><span id="outputScore">complete la información y presione el botón para calcular la puntuación</span></p>
+            <p>Palabras seleccionadas: <span id="outputWords"></span></p>
+            <p>Letras sueltas seleccionadas: <span id="outputLetters"></span></p>
+        </div>
+        <div id="scoreTable">
+            <input type="number" id="topScore" placeholder="elegir máximo de puntos" class="input" step="10" min="0">
+            <input type="button" id="topScoreButton" onclick="chooseMax()" value="Enviar" class="button"><br>
+            <p>Objetivo de puntos: <span id="topOutput">400</span></p>
+            <input type="button" onclick="addPlayer(1);" value="Agregar jugador" class="button">
+            <input type="button" onclick="addPlayer(-1);" value="Remover jugador" class="button">
+            <table id="table">
+                <tr>
+                    <td>player</td>
+                    <td>score</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td id="playerScore1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td id="playerScore2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>
