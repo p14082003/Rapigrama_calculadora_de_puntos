@@ -5,6 +5,6 @@ Estaba un verano en la costa con mi familia. Mi papá con su computadora de trab
 Obvio que hice una calculadora para contar los puntos!
 
 ### Cosas a mejorar
-Por qué hice 3 botones para enviar los puntos? Hacé todo con un solo click maestro!
+Por qué hice 3 botones para enviar los puntos? Hacé todo con un solo click, maestro!
 
 Verificaciones :)
